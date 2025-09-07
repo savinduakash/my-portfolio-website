@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Savindu Akash - Information Systems Student & Cybersecurity Enthusiast Portfolio showcasing skills in web development, networking, Linux, Python, SQL, and C.">
+    <meta name="keywords" content="Savindu Akash, portfolio, cybersecurity, Information Systems, web development, networking, Linux, Python, SQL, C">
+    <meta name="author" content="Savindu Akash">
+    <meta property="og:title" content="Savindu Akash - Cybersecurity & Information Systems Portfolio">
+    <meta property="og:description" content="Explore Savindu Akash's portfolio of projects in cybersecurity, web development, and programming.">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:url" content="https://savindu-akash.example.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Savindu Akash - Cybersecurity & Information Systems Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle between light and dark theme">
+        <i class="ri-sun-line"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav id="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo" aria-label="Savindu Akash logo">Savindu Akash</div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu" aria-hidden="true">
+                <li><a href="#hero" class="nav-link active" aria-current="page">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="bg">
+            <img data-src="batman.jpg" alt="Background" class="lazy">
+        </div>
+        <div class="hero-content">
+            <strong><span class="typed-text"></span></strong>
+            <p>Cybersecurity Enthusiast & Information Systems Student. Building secure and innovative digital solutions with expertise in networking, Linux, Python, SQL, C, and web development.</p>
+            <a href="#portfolio" class="hero-btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>About Me</h2>
+                <p>Learn more about my journey in Information Systems and passion for cybersecurity</p>
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-image">
+                    <img data-src="/home/savindu-ak/Desktop/portfolio  web/website/images/dp.png" alt="Savindu Akash" class="lazy">
+                </div>
+                <div class="about-text">
+                    <h3>Hi, I'm Savindu Akash!</h3>
+                    <p>I'm an undergraduate pursuing a BSc Hons in Information Systems at Sabaragamuwa University of Sri Lanka. As a cybersecurity enthusiast, I am passionate about building secure, efficient, and user-friendly digital solutions.</p>
+                    <p>My expertise spans networking, Linux, Python, SQL, C, and web development (HTML, CSS, JavaScript). I enjoy tackling complex challenges, whether it's securing systems, optimizing networks, or creating responsive web applications.</p>
+                    <a href="/resume.pdf" class="hero-btn" download>Download Resume</a>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="ri-html5-fill"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="ri-css3-fill"></i>
+                            <h4>CSS3</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="ri-javascript-fill"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="ri-shield-line"></i>
+                            <h4>Cybersecurity</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="ri-server-line"></i>
+                            <h4>Networking</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="ri-terminal-line"></i>
+                            <h4>Linux</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="ri-code-box-line"></i>
+                            <h4>Python</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="ri-database-2-line"></i>
+                            <h4>SQL</h4>
+                        </div>
+                        <div class="skill-item">
+                            <i class="ri-cpu-line"></i>
+                            <h4>C</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>My Portfolio</h2>
+                <p>A showcase of my projects in cybersecurity, networking, and programming</p>
+            </div>
+            <div class="portfolio-grid fade-in">
+                <div class="portfolio-item">
+                    <img data-src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&h=300&fit=crop" alt="Network Security Tool" class="lazy" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Network Security Tool</h3>
+                        <p>A Python-based tool for monitoring and securing network traffic with real-time alerts.</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img data-src="https://images.unsplash.com/photo-1516321310762-47943724e493?w=500&h=300&fit=crop" alt="Linux Automation Script" class="lazy" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Linux Automation Script</h3>
+                        <p>Bash script for automating server setup and security hardening on Linux systems.</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img data-src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=500&h=300&fit=crop" alt="Web Application" class="lazy" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Secure Web Application</h3>
+                        <p>A responsive web app built with HTML, CSS, and JavaScript, featuring secure user authentication.</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img data-src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Database Management System" class="lazy" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Database Management System</h3>
+                        <p>A SQL-based system for efficient data storage and retrieval with a Python frontend.</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img data-src="https://images.unsplash.com/photo-1516321165247-7a6ad4d3f2c7?w=500&h=300&fit=crop" alt="C System Utility" class="lazy" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>C System Utility</h3>
+                        <p>A lightweight system utility in C for process monitoring and resource management.</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img data-src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&h=300&fit=crop" alt="Network Analyzer" class="lazy" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Network Analyzer</h3>
+                        <p>A Python tool for analyzing network packets and detecting potential vulnerabilities.</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section">
+    <div class="container">
+        <div class="section-title fade-in">
+            <h2>My Blog</h2>
+            <p>Insights and tutorials on web development</p>
+        </div>
+        <div class="blog-grid fade-in">
+            <!-- Blog items -->
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Get In Touch</h2>
+                <p>Ready to collaborate on a cybersecurity or development project? Let's connect!</p>
+            </div>
+            <div class="contact-content fade-in">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="ri-phone-line"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>0740629145</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ri-mail-line"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>savinduvishalya@gmai.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ri-map-pin-line"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Sabaragamuwa, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ri-time-line"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="sr-only">Your Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Your Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="sr-only">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="sr-only">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="ri-twitter-fill"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            </div>
+            <p>&copy; 2025 Savindu Akash. All rights reserved. Made with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
